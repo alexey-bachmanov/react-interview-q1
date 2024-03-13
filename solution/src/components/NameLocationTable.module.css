@@ -1,0 +1,35 @@
+.table {
+  text-align: left;
+  table-layout: auto;
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 100%;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > td {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 0 8px;
+}
+
+.table > thead > tr > th {
+  font-size: small;
+  font-weight: bolder;
+}
+
+.table > tbody > tr > td {
+  padding: 4px 8px;
+}
+
+.table > tbody > tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+.table > tbody > tr:nth-child(even) {
+  background-color: #aaa;
+}
+
+.table > thead {
+  background-color: #888;
+}

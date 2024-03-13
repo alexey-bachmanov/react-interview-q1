@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.button-group {
+  display: flex;
+  align-self: flex-end;
+  margin: 12px 0;
+}
+
+.button-group button {
+  margin: 4px;
+  border-radius: 0;
+  background-color: #fff;
+  border: 1px solid black;
+  box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.button-group button:hover,
+.button-group button:active {
+  box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.75);
+  transform: translate(-1px, -1px);
+}
+
+.button-group button:disabled {
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  transform: translate(1px, 1px);
+}

@@ -1,0 +1,11 @@
+.main {
+  margin: 0px auto;
+  width: 600px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    width: 90%;
+  }
+}
