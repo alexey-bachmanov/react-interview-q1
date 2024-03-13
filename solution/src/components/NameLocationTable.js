@@ -11,6 +11,7 @@ function NameLocationTable(props) {
       <td>{item.location}</td>
     </tr>
   ));
+
   return (
     <table className={classes['table']}>
       <thead>

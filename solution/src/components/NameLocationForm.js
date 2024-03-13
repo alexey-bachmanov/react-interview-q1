@@ -84,8 +84,8 @@ function NameLocationForm() {
   };
 
   const handleClear = () => {
-    handleNameChange('');
-    setFormLocation('Location...');
+    // I assume this is supposed to clear the table, and not the form
+    setNameLocationTuples([]);
   };
 
   return (
@@ -102,11 +102,11 @@ function NameLocationForm() {
           onChange={(val) => setFormLocation(val)}
         />
         <div className={classes['button-group']}>
-          <button type="reset" onClick={handleClear}>
+          <button type="button" onClick={handleClear}>
             Clear
           </button>
           <button type="submit" disabled={!isSubmitEnabled}>
-            Submit
+            Add
           </button>
         </div>
       </form>
